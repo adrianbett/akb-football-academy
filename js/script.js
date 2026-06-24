@@ -31,4 +31,56 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
+// ===== Contact Form Validation =====
+  const submitBtn = document.getElementById('submitBtn');
+
+  if (submitBtn) {
+    submitBtn.addEventListener('click', () => {
+
+      const fullName = document.getElementById('fullName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const playerAge = document.getElementById('playerAge').value.trim();
+      const program = document.getElementById('program').value;
+
+      const successMsg = document.getElementById('formSuccess');
+      const errorMsg = document.getElementById('formError');
+
+      // Hide both messages first
+      successMsg.classList.add('d-none');
+      errorMsg.classList.add('d-none');
+
+      // Basic email format check
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      // Validation checks
+      if (!fullName || !email || !phone || !playerAge || !program) {
+        errorMsg.classList.remove('d-none');
+        return;
+      }
+
+      if (!emailPattern.test(email)) {
+        errorMsg.classList.remove('d-none');
+        return;
+      }
+
+      if (playerAge < 5 || playerAge > 18) {
+        errorMsg.classList.remove('d-none');
+        return;
+      }
+
+      // All good
+      successMsg.classList.remove('d-none');
+
+      // Clear form
+      document.getElementById('fullName').value = '';
+      document.getElementById('email').value = '';
+      document.getElementById('phone').value = '';
+      document.getElementById('playerAge').value = '';
+      document.getElementById('program').value = '';
+      document.getElementById('message').value = '';
+
+    });
+  }
+
 });
