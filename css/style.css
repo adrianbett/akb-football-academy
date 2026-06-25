@@ -1,11 +1,119 @@
 /* ===== AKB Football Academy - Main Stylesheet ===== */
 
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* ===== General ===== */
 body {
-  font-family: 'Open Sans', Arial, sans-serif;
-  color: #222;
+    font-family: 'Open Sans', Arial, sans-serif;
+    color: #222;
 }
 
-h1, h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+h1, h2, h3, h4, h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* ===== Navbar ===== */
+.navbar-brand {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+    transition: color 0.2s;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffdd57 !important;
+}
+
+/* ===== Hero Banner ===== */
+.hero-banner {
+    background: linear-gradient(135deg, #1b5e20, #388e3c);
+    color: white;
+    padding: 90px 0;
+}
+
+.hero-banner h1 {
+    font-size: 2.8rem;
+}
+
+.hero-banner p {
+    font-size: 1.2rem;
+}
+
+/* ===== Section Headings ===== */
+.section-heading {
+    font-size: 2rem;
+    color: #1b5e20;
+    margin-bottom: 1rem;
+}
+
+/* ===== Cards ===== */
+.card {
+    border: none;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+/* ===== Buttons ===== */
+.btn-success {
+    background-color: #1b5e20;
+    border-color: #1b5e20;
+}
+
+.btn-success:hover {
+    background-color: #145214;
+    border-color: #145214;
+}
+
+.btn-outline-success {
+    color: #1b5e20;
+    border-color: #1b5e20;
+}
+
+.btn-outline-success:hover {
+    background-color: #1b5e20;
+    color: white;
+}
+
+/* ===== Footer ===== */
+footer {
+    font-size: 0.9rem;
+    margin-top: auto;
+}
+
+/* ===== Page Header Banner ===== */
+.page-header {
+    background: linear-gradient(135deg, #1b5e20, #388e3c);
+    color: white;
+    padding: 60px 0;
+}
+
+/* ===== Accordion ===== */
+.accordion-button:not(.collapsed) {
+    background-color: #1b5e20;
+    color: white;
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 768px) {
+    .hero-banner h1 {
+        font-size: 2rem;
+    }
+
+    .hero-banner p {
+        font-size: 1rem;
+    }
 }
