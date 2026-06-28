@@ -165,3 +165,31 @@ body.dark-mode .accordion-button {
 html {
     scroll-behavior: smooth;
 }
+/* ===== Call to Action Section ===== */
+section.bg-success h2 {
+    font-size: 2rem;
+}
+
+/* ===== Stats Section ===== */
+.bg-success h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+/* ===== Card Header ===== */
+.card-header h5 {
+    font-size: 1.1rem;
+    letter-spacing: 0.5px;
+}
+
+/* ===== Nav active link ===== */
+.navbar-nav .nav-link.active {
+    color: #ffdd57 !important;
+    font-weight: 700;
+}
+
+/* ===== Badge styling ===== */
+.badge {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+}
