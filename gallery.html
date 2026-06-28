@@ -35,6 +35,15 @@
         </div>
     </nav>
 
+    <div class="container mt-2">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Gallery</li>
+            </ol>
+        </nav>
+    </div>
+
     <div class="page-header text-center">
         <div class="container">
             <h1>Gallery</h1>
@@ -44,7 +53,6 @@
 
     <section class="container py-5">
 
-        <!-- Filter Buttons -->
         <div class="text-center mb-4">
             <button class="btn btn-success me-2 filter-btn active" data-filter="all">All</button>
             <button class="btn btn-outline-success me-2 filter-btn" data-filter="training">Training</button>
@@ -52,7 +60,6 @@
             <button class="btn btn-outline-success filter-btn" data-filter="events">Events</button>
         </div>
 
-        <!-- Gallery Grid -->
         <div class="row g-4" id="galleryGrid">
 
             <div class="col-md-4 gallery-item" data-category="training">
@@ -109,7 +116,7 @@
                 </div>
             </div>
 
-        <div class="col-md-4 gallery-item" data-category="training">
+            <div class="col-md-4 gallery-item" data-category="training">
                 <div class="card h-100">
                     <div class="card-body text-center bg-secondary text-white py-5">
                         <p>Training Session Photo</p>
@@ -135,9 +142,11 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </section>
-<!-- Call to Action -->
+
+    <!-- Call to Action -->
     <section class="bg-success text-white text-center py-5">
         <div class="container">
             <h2>Want to Be Part of Our Story?</h2>
@@ -145,8 +154,10 @@
             <a href="contact.html" class="btn btn-light btn-lg mt-2">Join Us Today</a>
         </div>
     </section>
+
     <button id="backToTop" class="btn btn-success"><i class="bi bi-arrow-up"></i></button>
-   <footer class="bg-dark text-white py-5">
+
+    <footer class="bg-dark text-white py-5">
         <div class="container">
             <div class="row text-center text-md-start">
                 <div class="col-md-4 mb-4">
