@@ -123,4 +123,24 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+// ===== Age Group Calculator =====
+  const playerAgeInput = document.getElementById('playerAge');
+  const programSelect = document.getElementById('program');
+
+  if (playerAgeInput) {
+    playerAgeInput.addEventListener('input', () => {
+      const age = parseInt(playerAgeInput.value);
+
+      if (age >= 6 && age <= 9) {
+        programSelect.value = 'junior';
+      } else if (age >= 10 && age <= 14) {
+        programSelect.value = 'youth';
+      } else if (age >= 15 && age <= 18) {
+        programSelect.value = 'elite';
+      } else {
+        programSelect.value = '';
+      }
+    });
+  }
+
 });
