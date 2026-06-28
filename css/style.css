@@ -193,3 +193,30 @@ section.bg-success h2 {
     font-size: 0.75rem;
     padding: 5px 10px;
 }
+/* ===== Tooltip styles ===== */
+.navbar-brand:hover {
+    opacity: 0.85;
+    transition: opacity 0.2s;
+}
+
+/* ===== Table styles ===== */
+.table-success th {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+/* ===== Form styles ===== */
+.form-control:focus {
+    border-color: #1b5e20;
+    box-shadow: 0 0 0 0.2rem rgba(27, 94, 32, 0.25);
+}
+
+.form-select:focus {
+    border-color: #1b5e20;
+    box-shadow: 0 0 0 0.2rem rgba(27, 94, 32, 0.25);
+}
+
+/* ===== Accordion focus ===== */
+.accordion-button:focus {
+    box-shadow: 0 0 0 0.2rem rgba(27, 94, 32, 0.25);
+}
